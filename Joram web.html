@@ -1,192 +1,430 @@
+
+
 <!DOCTYPE html>
-<html.lag="en">
-<style>
-    body{
-    background-color: orangered;
-        background-image:
-        url('c:\Users\Student-510A2C\Pictures\New folder\Nature_Wallpaper_2188.jpg');
-        background-repeat: no-repeat;
-        background-size: auto;
-        opacity: 20px;
-        border: 10px;
-        border-radius: 5pt
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0ede200358.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My portfoilo</title>
+  </head>
+  <body>
+    <style>:root {
+      --main-color:gold ;
+      --secondary-color:black;
+      --tetiary-color: magenta;
+      --gray-color: cyan;
+      --secondgray-color: black;
     }
-</style>
-
-<h1 style="color:red;text-align:center;
-border: 2px solid rgb(5, 5, 5);
-border-radius: 5 px;
-background-color: cyan;
-"><marquee>
-WELCOME TO JORAM MUSAU'S WEBSITE  (DYNASET254 TECHUBS)!!!</marquee>
-</h1>
-
-<h2 style="color:rgb(4, 0, 255);text-align:center;font-family:universe;size: 10pt;
-border: 2px solid rgb(5, 5, 5);
-border-radius: 5 px;
-background-color:rgb(0, 255, 21);
-animation-name:example;
-
- animation-duration:10s timing-function delay iteration-count direction fill-mode;
-
-@keyframes identifier {
-
-
-    from{background_color:red;}
-    to{background-color: yellow;}
-
     
-}
-"> Web development practice</h2>
-
-<p style="font:calibri(body);
-background-color: aqua;
-border-radius:5px solid magenta;">Am Joram Musau a first yer student taking computer science.Am a programmer  and a software developer.Very soon i will be a senior and a genius in the market and the field.Am currently learning front-end web development.</P>
-
-<p style="border: 5px solid magenta;
-background-color: aqua;">Am always trying my best to be one of the best in the field.Above all am still training on hacking using the python tool.One day am gonna become the chief hacker in the country. Am gonna hack world bank and steal millions of money then move to Venezuela and spend the rest of my life there with my family.Am telling you i will be a softlife ambassador just wait and see.Lazima kijiji ishtuke hata kama masomo inanionyesha moto.Lazima mtii. nawaambia just wait</P>
-
-<p style="display: flex;
-background-color: aqua;
-border-radius: 5px solid rgb(128, 19, 0);">I also deal with selling of second hand cars and stolen cars.If you have lost a car you can come nikuuzie na bei ya kuongea.Below is a sample of the cars I sell:</p>
-
-
-<img src="c:\Users\Student-510A2C\Pictures\img_jpg.png"
-
-width="450"
-height="300">
-
-
-<p  style=" border: 5px solid gold;
-background-color:gold;
-">    
-    Rate that vehicle out of 5 
-
-<form style="display: inline-table;
-background-color: gold;
-border: 5px solid gold;">
-    <style>
-        
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .links a {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #ffffff;
+      padding: 5px 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: var(--secondary-color);
+      margin-right: 10px;
+    }
+    .cv {
+      background-color: var(--tetiary-color);
+      border: 1px solid var(--tetiary-color) !important;
+    }
+    body {
+      background: var(--main-color);
+      color: var(--secondary-color);
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      padding: 20px 50px;
+    }
+    
+    /* header sections */
+    
+    header {
+      /* width: 100vw; */
+      height: 65px;
+      /* padding: 20px 40px 10px 40px; */
+    }
+   
+    .nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav > .logo {
+      font-size: 28px;
+      font: bolder;
+      font-weight: 700;
+    }
+    .nav > .el > ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      gap: 20px;
+    }
+    main {
+      margin-bottom: 200px;
+    }
+    /* hero section */
+    .hero {
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .intro {
+      width: 45%;
+      height: 100%;
+      display: inherit;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .intro h1 {
+      font-size: 50px;
+    }
+    .intro p {
+      color: var(--secondgray-color);
+      margin-bottom: 20px;
+    }
+    .image {
+      width: 45%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #202020;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid magenta;
+    }
+    .image > img {
+      width: 95%;
+      height: 95%;
+      border-radius: 50%;
+    }
+    
+    /* About Section */
+    .about,
+    .services {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .about .title,
+    .services .title,
+    .forms .title {
+      font-size: 35px;
+      font-weight: 800;
+      padding-bottom: 20px;
+    }
+    .about .para {
+      width: 60%;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    
+    .about .socails,
+    .services .wcards,
+    .services .skillcard {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .about .socails .card {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 20%;
+      height: 150px;
+    }
+    
+    .about .circ {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--gray-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about .circ > div {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--tetiary-color);
+    }
+    .wcards {
+      justify-content: center !important;
+      gap: 50px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+    .wcards .card {
+      width: 35%;
+      background-color: var(--gray-color);
+      font-size: 30px;
+      padding: 40px;
+      padding-right: 150px;
+    }
+    .wcards .card > .icon {
+      color: var(--tetiary-color);
+      font-size: 50px;
+    }
+    .wcards .card:nth-child(1) {
+      border-bottom: 3px solid var(--tetiary-color);
+    }
+    .wcards .card:hover {
+      border-bottom: 3px solid var(--tetiary-color);
+    }
+    
+    .skillcard {
+      justify-content: center !important;
+      background-color: var(--gray-color);
+      padding: 40px 20px;
+      padding-left: 100px;
+      margin-top: 30px;
+    }
+    .skillcard > .card {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .skillcard > .card > .per {
+      font-size: 50px;
+      font-weight: 900;
+      color: var(--secondgray-color);
+    }
+    
+    .skillcard > .card > .name {
+      text-transform: uppercase;
+      color: var(--tetiary-color);
+    }
+    .forms {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    form {
+      width: 50%;
+      align-self: center;
+      margin-top: 50px;
+    
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    form > input {
+      border: none;
+      background: transparent;
+      width: 48%;
+      height: 40px;
+      border-bottom: 1px solid #c4c4c4;
+      outline: none;
+      font-size: 16px;
+    }
+    form > textarea {
+      border: none;
+      background: transparent;
+    
+      border: 1px solid #c4c4c4;
+      outline: none;
+      font-size: 16px;
+    }
+    
+    form > a {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #ffffff;
+      padding: 5px 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: var(--secondary-color);
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    
+    /* footer */
+    footer {
+      display: flex;
+      font-size: 14px;
+      justify-content: center;
+      align-items: center;
+      color: var(--secondgray-color);
+    }
     </style>
- <input type="radio"id="1"
- name="rate" value="1">
- <label for="1">1</label>
- <br>
+    <!-- header start -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">JORAM MUSAU</div>
+        <div class="el">
+          <ul class="list">
+            <li class="list-items">About me</li>
+            <li class="list-items">Contact me</li>
+            <li class="list-items">Services</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- HEader End -->
 
- <input type="radio"id="2"
- name="rate" value="2">
- <label for="2">2</label>
- <br>
-
- 
-
- <input type="radio"id="3"
- name="rate" value="3">
- <label for="3">3</label>
- <br>
-
- <input type="radio"id="4"
- name="rate" value="4">
- <label for="4">4</label>
- <br>
-
- <input type="radio"id="5"
- name="rate" value="5">
- <label for="5">5</label>
- <br>
-
- <input type="submit" value="submit">
-</form>
-</p> 
-
-
-<p style="
-background-color: greenyellow;
-border: 5px solid greenyellow;">
-    Rate my character since you came to know me.
-</p>
-
-<form style="margin: 10px;
-width: 500px;
-background-color: greenyellow;
-border: 5px solid greenyellow;">
-<input type="radio"id="Good"
- name="behavior" value="Good">
- <label for="Good">Good</label>
- <br>
-
- <input type="radio"id="Egocentric"
- name="behavior" value="Egocentric">
- <label for="Egocentric">Egocentric</label>
- <br>
-
- <input type="radio"id="Bad"
- name="behavior" value="bad">
- <label for="bad">Bad</label>
- <br>
-
- <input type="radio"id="childish"
- name="behavior" value="childish">
- <label for="childish">Childish</label>
- <br>
-
- <input type="submit" value="submit">
-</form>
-<p style="background-color: yellow;
-border: 5px solid yellow;
-margin: 5px;">
-You can listen to the audio track below for refreshment.</p>
-<audio controls>
-    <source src="d:\MUSIC\Music\02 Track 2.mp3"type="audio/mpeg">
-</audio>
-<p style="background-color: yellow;
-border: 5px solid yellow;
-margin: 5px;">You can also watch the clip below.</p>
-<video width="600" height="500" controls>
-    <source src="d:\MUSIC\Music\Music\Ruger - Dior (Official Music Video).mp4"
-    type="video/mp4">
-</video>
-
-<P style="background-color: yellow;
-border: 5px solid yellow;
-margin: 5px;">I learned web development from the website bellow.If you too want to learn click here:</p>
-    <style>
-        a:link{
-            color: green;
-            background-color: transparent;
-            text-decoration: none;
-
-        a:visited{
-            color: rgb(192, 255, 200);
-            background-color: transparent;
-            text-decoration: none;
-        }
-    </style>
-  
- <p style=" background-color: yellow;
- border: 5px solid yellow;
- margin: 5px;">
-<a href="https://www.w3schools.com/html">visit w3 schools
-    </a></p>
-
-    <img src="c:\Users\Student-510A2C\Pictures\Polish_20231230_114637472.png"
-    5width="600"
-    height="350">
+    <!-- Main Start -->
+    <main class="main">
+      <!-- Hero Section Start -->
+      <section class="hero" id="hero">
+        <div class="intro">
+          <h1>
+            Hi I am <br />
+            Joram Musau
+          </h1>
+          <p>Frontend Developer</p>
+          <div class="links">
+            <a href="#" class="cv">Download cv</a>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="c:\Users\Student-510A2C\Pictures\New folder\Polish_20240204_205445239.jpg" alt="image of me" />
+        </div>
+      </section>
+      <section class="about" id="About">
+        <h2 class="title">About</h2>
+        <div class="para;text-color:red">
 
 
-<p 
-style="background-color: yellow;
-border: 5px solid yellow;
-margin: 5px;">You can as well as google if you like it.The choice is all yours.use the link bellow to google.</p>
+         My name is Joram Musau. I am a computer scientist and a software Developer based in Kenya. Am also a freelancer and a Frontend Web Developer with a wide kowledge in html,css,javascript, node.js and react. I have developed several projects and am currently developing more.<br>
+         <Br>
+          Turning ideas into real life products is my ideal calling. I thank God for helping me achieve this milestone in my web Development career.  Am open for collaboration. Incase you may need me you can contact me throughthe respective platforms which I have hereby attached.
+        </div>
+        <div class="socails">
+          <div class="card">
+            <div class="circ">
+              <div></div>
+            </div>
+            <p>Full Name</p>
+            <p>Joram Musau</p>
+          </div>
+          <div class="card">
+            <div class="circ">
+              <div></div>
+            </div>
+            <p>Whatsapp me</p>
+            <p>
+              <a href="http://wa.me/+254740724051">Whatsapp me</a></p>
+          </div>
+          <div class="card">
+            <div class="circ">
+              <div></div>
+            </div>
+            <p>Twitter</p>
+            <p><a href="https://twitter.com/messages/1573913037932732416-1573913037932732416?text=">Tweet me</a></p>
+          </div>
+          <div class="card">
+            <div class="circ">
+              <div></div>
+            </div>
+            <p>Instagram</p>
+            <p><a href="https://www.instagram.com/direct/t/17842037105863712/">Instagram chat me</a></p>
+          </div>
+          <div class="card">
+            <div class="circ">
+              <div></div>
+            </div> 
+            <p>Phone Number</p>
+            <p> <a href="tel:+254740724051">Phone call me</a></p>
+          
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <h2 class="title">What I do</h2>
+        <div class="wcards">
+          <div class="card">
+            <div class="icon"><i class="fa-brands fa-uncharted"></i></div>
+            <p class="name">Software Development</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa-brands fa-dev"></i></div>
+            <p class="name">Web Development</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa-brands fa-unity"></i></div>
+            <p class="name">Web <br />Design</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa-brands fa-apple"></i></div>
+            <p class="name">Free <br />Lancing</p>
+          </div>
+        </div>
+        <h2 class="title">My Skills</h2>
 
-<a href="https://www.google.com">Visit chrome></a>
+        <div class="skillcard">
+          <div class="card">
+            <div class="per">60%</div>
+            <div class="name">Html</div>
+          </div>
+          <div class="card">
+            <div class="per">30%</div>
+            <div class="name">Css</div>
+          </div>
+          <div class="card">
+            <div class="per">50%</div>
+            <div class="name">javascript</div>
+          </div>
+          <div class="card">
+            <div class="per">40%</div>
+            <div class="name">React js</div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Form -->
+      <div class="forms">
+        <h2 class="title">Get in touch</h2>
+        <form action="#">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Last name" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Phone number" />
+          <input type="text" placeholder="Current location" />
+          <textarea
+            name=""
+            id=""
+            placeholder="Message"
+            cols="300"
+            rows="8"
+          ></textarea>
+          <a href="#" class="cv">Submit now</a>
+        </form>
+      </div>
+    </main>
 
-    <p  style="background-color: yellow;
-    border: 5px solid yellow;
-    margin: 5px;"> you can also find me at my email adress :</p>
-
-        <a href="mailto:jorammusau25@gmail.com">send email</a>
-</style>
-
-</body>
+    <footer class="footer">
+      &copy;
+      <p>Joram Musau</p>
+    </footer>
+  </body>
 </html>
