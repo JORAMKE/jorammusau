@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css" >
     <script
       src="https://kit.fontawesome.com/0ede200358.js"
       crossorigin="anonymous"
@@ -276,6 +276,38 @@
       align-items: center;
       color: var(--secondgray-color);
     }
+      @media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  .intro, .image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .links a {
+    width: auto;
+    margin: 10px;
+  }
+  .about .para {
+    width: 80%;
+  }
+  .socails, .wcards, .skillcard {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  form {
+    width: 90%;
+  }
+}
     </style>
     <!-- header start -->
     <header class="header">
