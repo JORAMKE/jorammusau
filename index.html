@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -217,6 +215,43 @@
       text-transform: uppercase;
       color: var(--tetiary-color);
     }
+
+    div.gallery{
+      margin: 2px;
+      border: 1px solid wheat;
+      float: left;
+      width: 180px;
+    }
+    div.gallery:hover{
+      border: 3px solid white;
+    }
+    div.gallery img{
+      width: 100%;
+      height: auto;
+    }
+    div.desc{
+      padding: 15px;
+      text-align: center;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .responsive{
+      padding: 0 6px;
+      float: left;
+      width: 24;
+    }
+
+    @media only screen and(max-width:500px){
+      .responsive{
+        width: 100%;
+      }
+      .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
     .forms {
       width: 100%;
       display: flex;
@@ -433,6 +468,82 @@
           </div>
         </div>
       </section>
+
+      <!--images gallery-->
+      <h2 style="text-align: center;">IMAGES GALLERY</h2>
+
+      <div class="gallery">
+        <a target="_blank"
+        href="https://joramke.github.io/joramweb/img.123.jpg">
+        <img src="https://joramke.github.io/joramweb/img.123.jpg"
+      alt="image of me"
+      width="700"
+    height="400">
+  </a>
+  <div class="desc">I am a dev!
+  </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank"
+        href="https://joramke.github.io/joramweb/img.123.jpg">
+        <img src="https://joramke.github.io/joramweb/img.123.jpg"
+      alt="image of me"
+      width="700"
+    height="400">
+  </a>
+  <div class="desc">I am a dev!
+  </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank"
+        href="https://joramke.github.io/joramweb/img.123.jpg">
+        <img src="https://joramke.github.io/joramweb/img.123.jpg"
+      alt="image of me"
+      width="700"
+    height="400">
+  </a>
+  <div class="desc">I am a dev!
+  </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank"
+        href="https://joramke.github.io/joramweb/img.123.jpg">
+        <img src="https://joramke.github.io/joramweb/img.123.jpg"
+      alt="image of me"
+      width="700"
+    height="400">
+  </a>
+  <div class="desc">I am a dev!
+  </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank"
+        href="https://joramke.github.io/joramweb/img.123.jpg">
+        <img src="https://joramke.github.io/joramweb/img.123.jpg"
+      alt="image of me"
+      width="700"
+    height="400">
+  </a>
+  <div class="desc">I am a dev!
+  </div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank"
+        href="https://joramke.github.io/joramweb/img.123.jpg">
+        <img src="https://joramke.github.io/joramweb/img.123.jpg"
+      alt="image of me"
+      width="700"
+    height="400">
+  </a>
+  <div class="desc">I am a dev!
+  </div>
+      </div>
+     
       <!-- Contact Form -->
       <div class="forms">
         <h2 class="title">Get in touch</h2>
