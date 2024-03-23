@@ -36,8 +36,25 @@
       margin-right: 10px;
     }
     .cv {
-      background-color: var(--tetiary-color);
+      background-color: var(tomato);
       border: 1px solid var(--tetiary-color) !important;
+    animation-name:example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out ;
+    }
+    @keyframes example{
+     0%{background-color: tomato;}
+     10%{background-color: lime;}
+     20%{background-color: springgreen;}
+     30%{background-color: dodgerblue;}
+     40%{background-color: darkviolet;}
+      50%{background-color:deeppink;}
+     60%{background-color: orangered;}
+     70%{background-color: limegreen;}
+     80%{background-color: orangered;}
+     80%{background-color:steelblue ;}
+     100%{background-color: hotpink;}
     }
     body {
    
@@ -351,9 +368,9 @@
         <div class="logo">JORAM MUSAU</div>
         <div class="el">
           <ul class="list">
-            <li class="list-items">About me</li>
-            <li class="list-items">Contact me</li>
-            <li class="list-items">Services</li>
+            <li class ="cv">About me</li>
+            <li class="cv">Contact me</li>
+            <li class="cv">Services</li>
           </ul>
         </div>
       </nav>
@@ -372,7 +389,7 @@
           <p>Frontend Developer</p>
           <div class="links">
             <a href="https://joramke.github.io/jorammusau/MY%20CURRICULUM%20VITAE.pdf" target="_blank"class="cv">Download cv</a>
-            <a href="https://joramke.github.io/joramweb/learnmore.html"target="_blank">Learn more</a>
+            <a href="https://joramke.github.io/joramweb/learnmore.html"target="_blank" class="cv">Learn more</a>
           </div>
         </div>
         <div class="image">
