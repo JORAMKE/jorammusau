@@ -54,7 +54,7 @@
         }
 
         .container button {
-            background-color: gold;
+            background-color: rgb(255, 13, 13);
             color: #fff;
             font-size: 12px;
             padding: 10px 45px;
@@ -215,10 +215,11 @@
             transform: translateX(0);
         }
     </style>
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--https://boxicons.com/ -->
 
-    <title>Login & Register Page ->> DYNASTIC FASHION AND DESIGNS</title>
+    <title>Login & Register Page ->> Code With Patel</title>
 </head>
 
 <body>
@@ -244,7 +245,7 @@
 
         <div class="form-container sign-in">
             <form>
-                <h1>Sign up</h1>
+                <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="#" class="icons"><i class='bx bxl-google'></i></a>
                     <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
@@ -260,10 +261,16 @@
         </div>
 
 
-       
-                <div class="toggle-panel toggle-center">
-                    <h1>Hii👊 customer</h1>
-                    <p>Join Dynastic fashion designs for best experience</p>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome To <br>'DYNASTIC FASHION DESIGNS'</h1>
+                    <p>Sign in With ID & Passowrd</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hii Customer 👋</h1>
+                    <p>Join 'DYNASTIC FASHION DESIGNS' for best offers</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
@@ -282,4 +289,5 @@
             container.classList.remove("active");
         });</script>
 </body>
+
 </html>
